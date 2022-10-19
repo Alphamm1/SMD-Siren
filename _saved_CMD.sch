@@ -1,0 +1,278 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery BT?
+U 1 1 634C5E09
+P 1000 3150
+F 0 "BT?" H 1150 3200 50  0000 L CNN
+F 1 "Battery" H 1150 3150 50  0000 L CNN
+F 2 "" V 1000 3210 50  0001 C CNN
+F 3 "~" V 1000 3210 50  0001 C CNN
+	1    1000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 634C5EE9
+P 1900 3850
+F 0 "C?" H 2050 3900 50  0000 L CNN
+F 1 "CP1" H 2050 3850 50  0000 L CNN
+F 2 "" H 1900 3850 50  0001 C CNN
+F 3 "~" H 1900 3850 50  0001 C CNN
+	1    1900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 634C5FA3
+P 2800 2250
+F 0 "R?" H 2900 2300 50  0000 L CNN
+F 1 "R" H 2900 2250 50  0000 L CNN
+F 2 "" V 2730 2250 50  0001 C CNN
+F 3 "~" H 2800 2250 50  0001 C CNN
+	1    2800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 634C6015
+P 3450 2250
+F 0 "R?" H 3550 2300 50  0000 L CNN
+F 1 "R" H 3550 2250 50  0000 L CNN
+F 2 "" V 3380 2250 50  0001 C CNN
+F 3 "~" H 3450 2250 50  0001 C CNN
+	1    3450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 634C6051
+P 4150 2250
+F 0 "R?" H 4250 2300 50  0000 L CNN
+F 1 "R" H 4250 2250 50  0000 L CNN
+F 2 "" V 4080 2250 50  0001 C CNN
+F 3 "~" H 4150 2250 50  0001 C CNN
+	1    4150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 634C6089
+P 4950 2250
+F 0 "R?" H 5050 2300 50  0000 L CNN
+F 1 "R" H 5050 2250 50  0000 L CNN
+F 2 "" V 4880 2250 50  0001 C CNN
+F 3 "~" H 4950 2250 50  0001 C CNN
+	1    4950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 634C60BF
+P 4950 1550
+F 0 "R?" H 5050 1600 50  0000 L CNN
+F 1 "R" H 5050 1550 50  0000 L CNN
+F 2 "" V 4880 1550 50  0001 C CNN
+F 3 "~" H 4950 1550 50  0001 C CNN
+	1    4950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 634C60F7
+P 5800 1350
+F 0 "R?" V 5550 1350 50  0000 C CNN
+F 1 "R" V 5650 1350 50  0000 C CNN
+F 2 "" V 5730 1350 50  0001 C CNN
+F 3 "~" H 5800 1350 50  0001 C CNN
+	1    5800 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 634C617A
+P 6650 2300
+F 0 "R?" V 6400 2300 50  0000 C CNN
+F 1 "R" V 6500 2300 50  0000 C CNN
+F 2 "" V 6580 2300 50  0001 C CNN
+F 3 "~" H 6650 2300 50  0001 C CNN
+	1    6650 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 634C61D8
+P 3200 3100
+F 0 "C?" V 3500 3100 50  0000 C CNN
+F 1 "CP1" V 3400 3100 50  0000 C CNN
+F 2 "" H 3200 3100 50  0001 C CNN
+F 3 "~" H 3200 3100 50  0001 C CNN
+	1    3200 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 634C6293
+P 4600 3050
+F 0 "C?" V 4300 3050 50  0000 C CNN
+F 1 "CP1" V 4400 3050 50  0000 C CNN
+F 2 "" H 4600 3050 50  0001 C CNN
+F 3 "~" H 4600 3050 50  0001 C CNN
+	1    4600 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 634C6414
+P 2900 4150
+F 0 "Q?" H 3100 4100 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 3100 4150 50  0000 L CNN
+F 2 "" H 3100 4250 50  0001 C CNN
+F 3 "~" H 2900 4150 50  0001 C CNN
+	1    2900 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 634C64AC
+P 4850 4150
+F 0 "Q?" H 5050 4200 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 5050 4150 50  0000 L CNN
+F 2 "" H 5050 4250 50  0001 C CNN
+F 3 "~" H 4850 4150 50  0001 C CNN
+	1    4850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 634C6610
+P 4950 3450
+F 0 "D?" V 5000 3300 50  0000 R CNN
+F 1 "LED_ALT" V 4900 3300 50  0000 R CNN
+F 2 "" H 4950 3450 50  0001 C CNN
+F 3 "~" H 4950 3450 50  0001 C CNN
+	1    4950 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 634C66DF
+P 2800 3450
+F 0 "D?" V 2850 3300 50  0000 R CNN
+F 1 "LED_ALT" V 2750 3300 50  0000 R CNN
+F 2 "" H 2800 3450 50  0001 C CNN
+F 3 "~" H 2800 3450 50  0001 C CNN
+	1    2800 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 634C69AC
+P 7000 3450
+F 0 "C?" H 7200 3500 50  0000 L CNN
+F 1 "CAP" H 7200 3450 50  0000 L CNN
+F 2 "" H 7000 3450 50  0001 C CNN
+F 3 "" H 7000 3450 50  0001 C CNN
+	1    7000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Clock-Timing-Programmable-Timers-and-Oscillators:NE555P U?
+U 1 1 634C6FCE
+P 8250 3250
+F 0 "U?" H 8250 3800 60  0000 C CNN
+F 1 "NE555P" H 8250 3650 60  0000 C CNN
+F 2 "digikey-footprints:DIP-8_W7.62mm" H 8450 3450 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fne555" H 8450 3550 60  0001 L CNN
+F 4 "296-1411-5-ND" H 8450 3650 60  0001 L CNN "Digi-Key_PN"
+F 5 "NE555P" H 8450 3750 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 8450 3850 60  0001 L CNN "Category"
+F 7 "Clock/Timing - Programmable Timers and Oscillators" H 8450 3950 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fne555" H 8450 4050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/NE555P/296-1411-5-ND/277057" H 8450 4150 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC OSC SINGLE TIMER 100KHZ 8-DIP" H 8450 4250 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 8450 4350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8450 4450 60  0001 L CNN "Status"
+	1    8250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 634C7566
+P 8350 2500
+F 0 "R?" V 8100 2500 50  0000 C CNN
+F 1 "R" V 8200 2500 50  0000 C CNN
+F 2 "" V 8280 2500 50  0001 C CNN
+F 3 "~" H 8350 2500 50  0001 C CNN
+	1    8350 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 634C75FF
+P 8950 1900
+F 0 "R?" H 8850 1850 50  0000 R CNN
+F 1 "R" H 8850 1900 50  0000 R CNN
+F 2 "" V 8880 1900 50  0001 C CNN
+F 3 "~" H 8950 1900 50  0001 C CNN
+	1    8950 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 634C76D4
+P 9950 2950
+F 0 "C?" H 10150 3000 50  0000 L CNN
+F 1 "CAP" H 10150 2950 50  0000 L CNN
+F 2 "" H 9950 2950 50  0001 C CNN
+F 3 "" H 9950 2950 50  0001 C CNN
+	1    9950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 634C7852
+P 9950 3650
+F 0 "#PWR?" H 9950 3400 50  0001 C CNN
+F 1 "GNDD" H 10000 3450 50  0000 C CNN
+F 2 "" H 9950 3650 50  0001 C CNN
+F 3 "" H 9950 3650 50  0001 C CNN
+	1    9950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 634C788C
+P 4950 5650
+F 0 "#PWR?" H 4950 5400 50  0001 C CNN
+F 1 "GNDD" H 5000 5450 50  0000 C CNN
+F 2 "" H 4950 5650 50  0001 C CNN
+F 3 "" H 4950 5650 50  0001 C CNN
+	1    4950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 634C78BF
+P 8400 4900
+F 0 "C?" V 8700 4900 50  0000 C CNN
+F 1 "CP1" V 8600 4900 50  0000 C CNN
+F 2 "" H 8400 4900 50  0001 C CNN
+F 3 "~" H 8400 4900 50  0001 C CNN
+	1    8400 4900
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
