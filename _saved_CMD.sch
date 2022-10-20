@@ -93,12 +93,12 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 634C60F7
-P 5800 1350
-F 0 "R?" V 5550 1350 50  0000 C CNN
-F 1 "R" V 5650 1350 50  0000 C CNN
-F 2 "" V 5730 1350 50  0001 C CNN
-F 3 "~" H 5800 1350 50  0001 C CNN
-	1    5800 1350
+P 5450 1100
+F 0 "R?" V 5200 1100 50  0000 C CNN
+F 1 "R" V 5300 1100 50  0000 C CNN
+F 2 "" V 5380 1100 50  0001 C CNN
+F 3 "~" H 5450 1100 50  0001 C CNN
+	1    5450 1100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -126,46 +126,24 @@ $EndComp
 $Comp
 L Device:CP1 C?
 U 1 1 634C6293
-P 4600 3050
-F 0 "C?" V 4300 3050 50  0000 C CNN
-F 1 "CP1" V 4400 3050 50  0000 C CNN
-F 2 "" H 4600 3050 50  0001 C CNN
-F 3 "~" H 4600 3050 50  0001 C CNN
-	1    4600 3050
+P 4650 3100
+F 0 "C?" V 4350 3100 50  0000 C CNN
+F 1 "CP1" V 4450 3100 50  0000 C CNN
+F 2 "" H 4650 3100 50  0001 C CNN
+F 3 "~" H 4650 3100 50  0001 C CNN
+	1    4650 3100
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Q_NPN_BCE Q?
+L dk_Transistors-Bipolar-BJT-Single:2N3904 Q?
 U 1 1 634C6414
-P 2900 4150
-F 0 "Q?" H 3100 4100 50  0000 L CNN
-F 1 "Q_NPN_BCE" H 3100 4150 50  0000 L CNN
-F 2 "" H 3100 4250 50  0001 C CNN
-F 3 "~" H 2900 4150 50  0001 C CNN
-	1    2900 4150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:Q_NPN_BCE Q?
-U 1 1 634C64AC
-P 4850 4150
-F 0 "Q?" H 5050 4200 50  0000 L CNN
-F 1 "Q_NPN_BCE" H 5050 4150 50  0000 L CNN
-F 2 "" H 5050 4250 50  0001 C CNN
-F 3 "~" H 4850 4150 50  0001 C CNN
-	1    4850 4150
+P 3050 4000
+F 0 "Q?" H 2650 3750 50  0000 R CNN
+F 1 "Q_NPN_BCE" H 2650 3700 50  0000 R CNN
+F 2 "" H 3250 4100 50  0001 C CNN
+F 3 "~" H 3050 4000 50  0001 C CNN
+	1    3050 4000
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_ALT D?
-U 1 1 634C6610
-P 4950 3450
-F 0 "D?" V 5000 3300 50  0000 R CNN
-F 1 "LED_ALT" V 4900 3300 50  0000 R CNN
-F 2 "" H 4950 3450 50  0001 C CNN
-F 3 "~" H 4950 3450 50  0001 C CNN
-	1    4950 3450
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED_ALT D?
@@ -179,45 +157,14 @@ F 3 "~" H 2800 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pspice:CAP C?
-U 1 1 634C69AC
-P 7000 3450
-F 0 "C?" H 7200 3500 50  0000 L CNN
-F 1 "CAP" H 7200 3450 50  0000 L CNN
-F 2 "" H 7000 3450 50  0001 C CNN
-F 3 "" H 7000 3450 50  0001 C CNN
-	1    7000 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Clock-Timing-Programmable-Timers-and-Oscillators:NE555P U?
-U 1 1 634C6FCE
-P 8250 3250
-F 0 "U?" H 8250 3800 60  0000 C CNN
-F 1 "NE555P" H 8250 3650 60  0000 C CNN
-F 2 "digikey-footprints:DIP-8_W7.62mm" H 8450 3450 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fne555" H 8450 3550 60  0001 L CNN
-F 4 "296-1411-5-ND" H 8450 3650 60  0001 L CNN "Digi-Key_PN"
-F 5 "NE555P" H 8450 3750 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 8450 3850 60  0001 L CNN "Category"
-F 7 "Clock/Timing - Programmable Timers and Oscillators" H 8450 3950 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fne555" H 8450 4050 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/NE555P/296-1411-5-ND/277057" H 8450 4150 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC OSC SINGLE TIMER 100KHZ 8-DIP" H 8450 4250 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 8450 4350 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8450 4450 60  0001 L CNN "Status"
-	1    8250 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 634C7566
-P 8350 2500
-F 0 "R?" V 8100 2500 50  0000 C CNN
-F 1 "R" V 8200 2500 50  0000 C CNN
-F 2 "" V 8280 2500 50  0001 C CNN
-F 3 "~" H 8350 2500 50  0001 C CNN
-	1    8350 2500
+P 8600 2500
+F 0 "R?" V 8350 2500 50  0000 C CNN
+F 1 "R" V 8450 2500 50  0000 C CNN
+F 2 "" V 8530 2500 50  0001 C CNN
+F 3 "~" H 8600 2500 50  0001 C CNN
+	1    8600 2500
 	0    1    1    0   
 $EndComp
 $Comp
@@ -244,35 +191,227 @@ F 3 "" H 9950 2950 50  0001 C CNN
 $EndComp
 $Comp
 L power:GNDD #PWR?
-U 1 1 634C7852
-P 9950 3650
-F 0 "#PWR?" H 9950 3400 50  0001 C CNN
-F 1 "GNDD" H 10000 3450 50  0000 C CNN
-F 2 "" H 9950 3650 50  0001 C CNN
-F 3 "" H 9950 3650 50  0001 C CNN
-	1    9950 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR?
 U 1 1 634C788C
-P 4950 5650
-F 0 "#PWR?" H 4950 5400 50  0001 C CNN
-F 1 "GNDD" H 5000 5450 50  0000 C CNN
-F 2 "" H 4950 5650 50  0001 C CNN
-F 3 "" H 4950 5650 50  0001 C CNN
-	1    4950 5650
+P 4550 6300
+F 0 "#PWR?" H 4550 6050 50  0001 C CNN
+F 1 "GNDD" H 4600 6100 50  0000 C CNN
+F 2 "" H 4550 6300 50  0001 C CNN
+F 3 "" H 4550 6300 50  0001 C CNN
+	1    4550 6300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP1 C?
 U 1 1 634C78BF
 P 8400 4900
-F 0 "C?" V 8700 4900 50  0000 C CNN
-F 1 "CP1" V 8600 4900 50  0000 C CNN
+F 0 "C?" V 8100 4900 50  0000 C CNN
+F 1 "CP1" V 8200 4900 50  0000 C CNN
 F 2 "" H 8400 4900 50  0001 C CNN
 F 3 "~" H 8400 4900 50  0001 C CNN
 	1    8400 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1000 2950 1000 1100
+Wire Wire Line
+	1000 1100 1900 1100
+Wire Wire Line
+	2800 1100 2800 2100
+Wire Wire Line
+	2800 2400 2800 3100
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 634C64AC
+P 4850 4300
+F 0 "Q?" H 5050 4350 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 5050 4300 50  0000 L CNN
+F 2 "" H 5050 4400 50  0001 C CNN
+F 3 "~" H 4850 4300 50  0001 C CNN
+	1    4850 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3600 2800 4050
+Wire Wire Line
+	3050 3100 2800 3100
+Connection ~ 2800 3100
+Wire Wire Line
+	2800 3100 2800 3300
+Wire Wire Line
+	4500 3100 4150 3100
+Wire Wire Line
+	4800 3100 4950 3100
+Wire Wire Line
+	4950 3100 4950 3300
+$Comp
+L Device:LED_ALT D?
+U 1 1 634C6610
+P 4950 3450
+F 0 "D?" V 5000 3300 50  0000 R CNN
+F 1 "LED_ALT" V 4900 3300 50  0000 R CNN
+F 2 "" H 4950 3450 50  0001 C CNN
+F 3 "~" H 4950 3450 50  0001 C CNN
+	1    4950 3450
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	4950 4100 4950 3600
+Wire Wire Line
+	4950 2400 4950 3100
+Connection ~ 4950 3100
+Wire Wire Line
+	4150 2400 4150 3100
+Wire Wire Line
+	3450 2400 3450 3100
+Connection ~ 3450 3100
+Wire Wire Line
+	3450 3100 3350 3100
+Wire Wire Line
+	3450 3100 4100 4300
+Wire Wire Line
+	4100 4300 4650 4300
+Wire Wire Line
+	4150 3100 3500 4300
+Wire Wire Line
+	3500 4300 3050 4300
+Connection ~ 4150 3100
+Wire Wire Line
+	3450 2100 3450 1100
+Wire Wire Line
+	3450 1100 2800 1100
+Connection ~ 2800 1100
+Wire Wire Line
+	3450 1100 4150 1100
+Wire Wire Line
+	4150 1100 4150 2100
+Connection ~ 3450 1100
+Wire Wire Line
+	4950 1400 4950 1100
+Wire Wire Line
+	4950 1100 4150 1100
+Connection ~ 4150 1100
+Wire Wire Line
+	4950 1700 4950 2100
+Wire Wire Line
+	5300 1100 4950 1100
+Connection ~ 4950 1100
+Wire Wire Line
+	1900 3700 1900 1100
+Connection ~ 1900 1100
+Wire Wire Line
+	1900 1100 2800 1100
+Wire Wire Line
+	1000 3350 1000 6200
+Wire Wire Line
+	1000 6200 2800 6200
+Wire Wire Line
+	2800 4550 2800 6200
+Connection ~ 2800 6200
+Wire Wire Line
+	2800 6200 4950 6200
+Wire Wire Line
+	4950 4500 4950 6200
+Connection ~ 4950 6200
+Wire Wire Line
+	4950 6200 7300 6200
+$Comp
+L dk_Clock-Timing-Programmable-Timers-and-Oscillators:555 U?
+U 1 1 63513386
+P 8300 3000
+F 0 "U?" H 8600 3000 50  0000 L CNN
+F 1 "555" H 8600 2900 50  0000 L CNN
+F 2 "" H 9050 3600 50  0001 C CNN
+F 3 "" H 9050 3600 50  0001 C CNN
+	1    8300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 63513481
+P 7300 3300
+F 0 "C?" H 7500 3350 50  0000 L CNN
+F 1 "CAP" H 7500 3300 50  0000 L CNN
+F 2 "" H 7300 3300 50  0001 C CNN
+F 3 "" H 7300 3300 50  0001 C CNN
+	1    7300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2900 8200 2850
+Wire Wire Line
+	8200 2850 7300 2850
+Wire Wire Line
+	7300 3050 7300 2850
+Wire Wire Line
+	7300 1100 5650 1100
+Connection ~ 7300 2850
+Wire Wire Line
+	7300 2850 7300 1100
+Wire Wire Line
+	5650 1100 5650 3900
+Wire Wire Line
+	5650 3900 8500 3900
+Wire Wire Line
+	8500 3900 8500 3250
+Connection ~ 5650 1100
+Wire Wire Line
+	5650 1100 5600 1100
+Wire Wire Line
+	7300 3550 7300 3600
+Connection ~ 7300 6200
+Wire Wire Line
+	7300 6200 7350 6200
+Wire Wire Line
+	8300 2900 8300 2500
+Wire Wire Line
+	8300 2500 8450 2500
+Wire Wire Line
+	8750 2500 9950 2500
+Wire Wire Line
+	9950 2500 9950 2700
+$Comp
+L power:Earth #PWR?
+U 1 1 6351710E
+P 9950 3550
+F 0 "#PWR?" H 9950 3300 50  0001 C CNN
+F 1 "Earth" H 9950 3400 50  0001 C CNN
+F 2 "" H 9950 3550 50  0001 C CNN
+F 3 "~" H 9950 3550 50  0001 C CNN
+	1    9950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 3550 9950 3200
+Wire Wire Line
+	8400 2900 8400 2850
+Wire Wire Line
+	8400 2850 8200 2850
+Connection ~ 8200 2850
+Wire Wire Line
+	8500 2900 8500 2750
+Wire Wire Line
+	8500 2750 8950 2750
+Wire Wire Line
+	8950 2750 8950 2050
+Wire Wire Line
+	8950 1750 8950 1100
+Wire Wire Line
+	8950 1100 7300 1100
+Connection ~ 7300 1100
+Wire Wire Line
+	8200 3250 8200 3600
+Wire Wire Line
+	8200 3600 7300 3600
+Connection ~ 7300 3600
+Wire Wire Line
+	7300 3600 7300 6200
+Wire Wire Line
+	8500 2750 7050 2750
+Wire Wire Line
+	7050 2750 7050 3750
+Wire Wire Line
+	7050 3750 8300 3750
+Wire Wire Line
+	8300 3750 8300 3250
+Connection ~ 8500 2750
 $EndSCHEMATC
