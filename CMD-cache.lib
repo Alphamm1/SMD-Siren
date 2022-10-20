@@ -105,4 +105,121 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device:R_POT
+#
+DEF Device:R_POT RV 0 40 Y N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "Device:R_POT" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Potentiometer*
+$ENDFPLIST
+DRAW
+S 40 100 -40 -100 0 1 10 N
+P 2 0 1 0 100 0 60 0 N
+P 3 0 1 0 45 0 90 20 90 -20 F
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device:Speaker
+#
+DEF Device:Speaker LS 0 0 Y N 1 F N
+F0 "LS" 50 225 50 H V R CNN
+F1 "Device:Speaker" 50 150 50 H V R CNN
+F2 "" 0 -200 50 H I C CNN
+F3 "" -10 -50 50 H I C CNN
+DRAW
+S -100 50 40 -150 0 0 10 N
+P 4 0 0 10 40 50 140 150 140 -250 40 -150 N
+X 1 1 -200 0 100 R 50 50 1 1 I
+X 2 2 -200 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# dk_Clock-Timing-Programmable-Timers-and-Oscillators:555
+#
+DEF dk_Clock-Timing-Programmable-Timers-and-Oscillators:555 U 0 40 Y Y 1 F N
+F0 "U" 750 600 50 H V C CNN
+F1 "dk_Clock-Timing-Programmable-Timers-and-Oscillators:555" 750 600 50 H V C CNN
+F2 "" 750 600 50 H I C CNN
+F3 "" 750 600 50 H I C CNN
+DRAW
+S 250 0 -150 -150 0 1 0 N
+X GND 1 -100 -250 100 U 50 1 1 1 P
+X TRIG 2 0 -250 100 U 50 1 1 1 P
+X OUPUT 3 100 -250 100 U 50 1 1 1 P
+X RESET 4 200 -250 100 U 50 1 1 1 P
+X CV 5 200 100 100 D 50 50 1 1 P
+X THRS 6 100 100 100 D 50 50 1 1 P
+X DIS 7 0 100 100 D 50 50 1 1 P
+X VCC 8 -100 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Transistors-Bipolar-BJT-Single:2N3904
+#
+DEF dk_Transistors-Bipolar-BJT-Single:2N3904 Q 0 0 Y Y 1 F N
+F0 "Q" -374 -366 60 H V L CNN
+F1 "dk_Transistors-Bipolar-BJT-Single:2N3904" -1200 706 60 H V C CNN
+F2 "digikey-footprints:TO-92-3" -1050 550 60 V I L CNN
+F3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" -300 500 60 H I L CNN
+F4 "2N3904CS-ND" -400 600 60 H I L CNN "Digi-Key_PN"
+F5 "2N3904" -400 700 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" -400 800 60 H I L CNN "Category"
+F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
+F8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=LSSGP072.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/central-semiconductor-corp/2N3904/2N3904CS-ND/4806876" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRANS NPN 40V TO-92" 200 1000 60 H I L CNN "Description"
+F11 "Central Semiconductor Corp" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C -200 -300 128 0 1 0 f
+P 2 0 1 0 -250 -150 -200 -250 N
+P 2 0 1 0 -200 -400 -200 -200 N
+P 2 0 1 0 -200 -350 -250 -450 N
+P 2 0 1 0 -60 -300 -200 -300 N
+P 2 0 1 0 -50 -300 -100 -300 N
+P 4 0 1 0 -200 -410 -240 -430 -250 -390 -200 -410 F
+X E 1 -250 -550 100 U 50 50 1 1 P
+X C 2 -250 -50 100 D 50 50 1 1 P
+X B 3 0 -300 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# power:Earth
+#
+DEF ~power:Earth #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power:Earth" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X Earth 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# pspice:CAP
+#
+DEF pspice:CAP C 0 10 Y Y 1 F N
+F0 "C" 100 150 50 V V C CNN
+F1 "pspice:CAP" 100 -150 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS C
+DRAW
+P 2 0 1 0 -150 -50 150 -50 N
+P 2 0 1 0 -150 50 150 50 N
+X ~ 1 0 250 200 D 40 40 1 1 P
+X ~ 2 0 -250 200 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
 #End Library
