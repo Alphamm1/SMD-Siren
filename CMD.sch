@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Battery 9V
+L Device:Battery 9V1
 U 1 1 634C5E09
 P 1000 3150
-F 0 "9V" H 1150 3200 50  0000 L CNN
+F 0 "9V1" H 1150 3200 50  0000 L CNN
 F 1 "Battery" H 1150 3150 50  0000 L CNN
 F 2 "Connector:JWT_A3963_1x02_P3.96mm_Vertical" V 1000 3210 50  0001 C CNN
 F 3 "~" V 1000 3210 50  0001 C CNN
@@ -355,10 +355,10 @@ Wire Wire Line
 Wire Wire Line
 	9950 2500 9950 2700
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0101
 U 1 1 6351710E
 P 9950 3550
-F 0 "#PWR?" H 9950 3300 50  0001 C CNN
+F 0 "#PWR0101" H 9950 3300 50  0001 C CNN
 F 1 "Earth" H 9950 3400 50  0001 C CNN
 F 2 "" H 9950 3550 50  0001 C CNN
 F 3 "~" H 9950 3550 50  0001 C CNN
@@ -410,10 +410,10 @@ Wire Wire Line
 	8400 2750 7050 2750
 Connection ~ 8400 2750
 $Comp
-L Device:R_POT Volume-Control
+L Device:R_POT Volume-Control1
 U 1 1 63536E41
 P 8400 5500
-F 0 "Volume-Control" H 8300 5550 50  0000 R CNN
+F 0 "Volume-Control1" H 8300 5550 50  0000 R CNN
 F 1 "200" H 8300 5500 50  0000 R CNN
 F 2 "Potentiometer_SMD:Potentiometer_ACP_CA14-VSMD_Vertical_Hole" H 8400 5500 50  0001 C CNN
 F 3 "~" H 8400 5500 50  0001 C CNN
@@ -423,10 +423,10 @@ $EndComp
 Wire Wire Line
 	8400 5350 8400 5050
 $Comp
-L Device:Speaker LS?
+L Device:Speaker LS1
 U 1 1 63539103
 P 9300 5500
-F 0 "LS?" H 9500 5500 50  0000 L CNN
+F 0 "LS1" H 9500 5500 50  0000 L CNN
 F 1 "Speaker" H 9500 5450 50  0000 L CNN
 F 2 "" H 9300 5300 50  0001 C CNN
 F 3 "~" H 9290 5450 50  0001 C CNN
@@ -446,37 +446,26 @@ Wire Wire Line
 Wire Wire Line
 	8800 6200 8400 6200
 Connection ~ 8400 6200
-Wire Wire Line
-	8400 6200 8400 6350
-$Comp
-L power:Earth #PWR?
-U 1 1 6353DD53
-P 8400 6350
-F 0 "#PWR?" H 8400 6100 50  0001 C CNN
-F 1 "Earth" H 8400 6200 50  0001 C CNN
-F 2 "" H 8400 6350 50  0001 C CNN
-F 3 "~" H 8400 6350 50  0001 C CNN
-	1    8400 6350
-	1    0    0    -1  
-$EndComp
 Connection ~ 4950 6200
 Connection ~ 2800 6200
-$Comp
-L power:Earth #PWR?
-U 1 1 63540573
-P 4950 6400
-F 0 "#PWR?" H 4950 6150 50  0001 C CNN
-F 1 "Earth" H 4950 6250 50  0001 C CNN
-F 2 "" H 4950 6400 50  0001 C CNN
-F 3 "~" H 4950 6400 50  0001 C CNN
-	1    4950 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 6400 4950 6200
 Wire Wire Line
 	1900 4000 1900 6200
 Connection ~ 1900 6200
 Wire Wire Line
 	1900 6200 2800 6200
+$Comp
+L power:GNDD #PWR0102
+U 1 1 6354FCB2
+P 2800 6500
+F 0 "#PWR0102" H 2800 6250 50  0001 C CNN
+F 1 "GNDD" H 2850 6300 50  0000 C CNN
+F 2 "" H 2800 6500 50  0001 C CNN
+F 3 "" H 2800 6500 50  0001 C CNN
+	1    2800 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6500 2800 6200
+Wire Wire Line
+	8400 6350 8400 6200
 $EndSCHEMATC
